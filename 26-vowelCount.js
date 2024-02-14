@@ -6,9 +6,9 @@ const getCount = str => {
     return output != null ? output.length : 0;
 }
 
-// function getCount(str) {
-//   return (str.match(/[aeiou]/ig)||[]).length;
-// }
+function getCount(str) {
+  return (str.match(/[aeiou]/ig)||[]).length;
+}
 
 console.log(getCount("abracadabra"));
 console.log(getCount("mypyx"));

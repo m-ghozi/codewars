@@ -11,22 +11,22 @@ const squareDigits = num => {
   return parseInt(result)
 }
 
-// function squareDigits(num){
-//   var string = num.toString();
-//   var results = [];
-//   for (var i = 0; i < string.length; i++){
-//       results[i] = string[i] * string[i];
-//   }
-//   return Number(results.join(''));
-// };
+function squareDigits(num){
+  var string = num.toString();
+  var results = [];
+  for (var i = 0; i < string.length; i++){
+      results[i] = string[i] * string[i];
+  }
+  return Number(results.join(''));
+};
 
-// function squareDigits(num){
-//   return +num.toString().split('').map(i => i*i).join('');
-// }
+function squareDigits(num){
+  return +num.toString().split('').map(i => i*i).join('');
+}
 
-// function squareDigits(num){
-//   return Number(('' + num).split('').map(function (val) { return val * val;}).join(''));
-// }
+function squareDigits(num){
+  return Number(('' + num).split('').map(function (val) { return val * val;}).join(''));
+}
 
 console.log(squareDigits(3212));
 console.log(squareDigits(2112));
